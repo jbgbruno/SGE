@@ -1,10 +1,17 @@
+altgraph==0.17.4
 asgiref==3.8.1
 Django==5.2.1
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
 mccabe==0.7.0
+packaging==24.1
+pefile==2024.8.26
+psycopg2-binary==2.9.10
 pycodestyle==2.14.0
 pyflakes==3.4.0
+pyinstaller==6.10.0
+pyinstaller-hooks-contrib==2024.8
 PyJWT==2.9.0
+pywin32-ctypes==0.2.3
 sqlparse==0.5.3
 tzdata==2025.2
