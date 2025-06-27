@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} SGE - Editar Marca {% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <h3 class="display-6 ">Editar Marca</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-text">
+                <p>Tem certeza que deseja excluir a marca: <strong>{{ object.name }}</strong>?</p>
+            </div>
+            <form method="post" class="form">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Deletar</button>
+            </form>
+        </div>
+
+    </div>
+    <a href="{% url 'brands_list' %}" class="btn btn-secondary mt-3">Cancelar e Voltar para a Lista de Marcas</a>
+</div>
+{% endblock %}
